@@ -1,0 +1,26 @@
+<!-- phonebook/templates/phonebook/contact.html -->
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Contact Information</title>
+</head>
+<body>
+    <h1>Contact Information</h1>
+    <ul>
+        {% for section, info in contact_info.items %}
+        <li>
+            <h2>{{ section }}</h2>
+            <p>Phone: {{ info.phone }}</p>
+            <p>Website: <a href="{{ info.website }}">{{ info.website }}</a></p>
+            <p>Address: {{ info.address }}</p>
+        </li>
+        {% endfor %}
+    </ul>
+</body>
+</html>
+
+
+
+
+
+
